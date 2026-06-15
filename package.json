@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/chamchi0809/i-input-svelte.git"
   },
-  "homepage": "https://github.com/chamchi0809/i-input-svelte#readme",
+  "homepage": "https://i-input-svelte.pages.dev",
   "bugs": {
     "url": "https://github.com/chamchi0809/i-input-svelte/issues"
   },
@@ -46,6 +46,8 @@
   "scripts": {
     "dev": "vite",
     "build": "svelte-package && publint",
+    "build-demo": "vite build --outDir demo-dist",
+    "deploy-demo": "npm run build-demo && wrangler pages deploy demo-dist --project-name i-input-svelte --branch main",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "prepublishOnly": "npm run build"
   },
@@ -59,6 +61,7 @@
     "svelte": "^5.19.0",
     "svelte-check": "^4.1.4",
     "typescript": "^5.7.3",
-    "vite": "^6.0.7"
+    "vite": "^6.0.7",
+    "wrangler": "^4.100.0"
   }
 }

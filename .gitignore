@@ -1,5 +1,6 @@
 node_modules
 /dist
+/demo-dist
 /.svelte-kit
 *.tgz
 .DS_Store

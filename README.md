@@ -8,6 +8,8 @@ custom rendering.
 
 Ships a styled `<IInput />` component and a headless `createIInput` controller.
 
+**▶ [Live demo & playground](https://i-input-svelte.pages.dev)**
+
 > This is a Svelte port of [`i-input`](https://github.com/FarazzShaikh/i-input)
 > by [Faraz Shaikh](https://farazzshaikh.com). All credit for the original
 > design and logic goes to the upstream project.
