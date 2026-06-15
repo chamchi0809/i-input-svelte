@@ -1,0 +1,64 @@
+{
+  "name": "i-input-svelte",
+  "version": "0.1.0",
+  "description": "A Blender-style universal number input for Svelte 5 with drag-to-scrub, inline math expressions, and pluggable unit systems. A Svelte port of i-input.",
+  "license": "MIT",
+  "author": "chamchi0809",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chamchi0809/i-input-svelte.git"
+  },
+  "homepage": "https://github.com/chamchi0809/i-input-svelte#readme",
+  "bugs": {
+    "url": "https://github.com/chamchi0809/i-input-svelte/issues"
+  },
+  "keywords": [
+    "svelte",
+    "svelte5",
+    "input",
+    "number",
+    "blender",
+    "scrub",
+    "drag",
+    "units",
+    "expression",
+    "component"
+  ],
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "svelte-package && publint",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/package": "^2.3.7",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "publint": "^0.3.2",
+    "svelte": "^5.19.0",
+    "svelte-check": "^4.1.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}
